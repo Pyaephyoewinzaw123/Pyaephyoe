@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife Hub – Programs</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">FitLife<span>Hub</span></div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="programs.html" class="nav-link active">Programs</a>
+        <a href="index.html#articles" class="nav-link">Articles</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="dashboard.html" class="btn btn-small">Login</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="programs.html" class="nav-link active">Programs</a>
+    <a href="index.html#articles" class="nav-link">Articles</a>
+    <a href="index.html#contact" class="nav-link">Contact</a>
+    <a href="dashboard.html" class="nav-link">Login</a>
+  </nav>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="section-title">Fitness Programs</h1>
+        <p class="section-subtitle">Choose the routine that fits your goals.</p>
+
+        <!-- Filter Bar -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-level="all">All</button>
+          <button class="filter-btn" data-level="beginner">Beginner</button>
+          <button class="filter-btn" data-level="intermediate">Intermediate</button>
+          <button class="filter-btn" data-level="advanced">Advanced</button>
+          <button class="filter-btn" data-level="home">Home Workouts</button>
+        </div>
+
+        <!-- Program Grid -->
+        <div class="grid program-grid" id="programList">
+          <article class="card program-card" data-level="beginner home">
+            <div class="program-tag">Beginner · Home</div>
+            <h3>Gentle Start Routine</h3>
+            <p>Perfect for new users with no prior workout experience.</p>
+            <p class="program-meta">30 min · No equipment</p>
+          </article>
+
+          <article class="card program-card" data-level="beginner">
+            <div class="program-tag">Beginner</div>
+            <h3>Walk & Stretch Plan</h3>
+            <p>Daily walking + stretching to build a solid foundation.</p>
+            <p class="program-meta">20–30 min · Low impact</p>
+          </article>
+
+          <article class="card program-card" data-level="intermediate home">
+            <div class="program-tag">Intermediate · Home</div>
+            <h3>Home HIIT Burner</h3>
+            <p>Bodyweight intervals to burn calories fast.</p>
+            <p class="program-meta">25 min · Moderate impact</p>
+          </article>
+
+          <article class="card program-card" data-level="intermediate">
+            <div class="program-tag">Intermediate</div>
+            <h3>Strength Builder</h3>
+            <p>Focus on bodyweight strength and core stability.</p>
+            <p class="program-meta">40 min · Optional dumbbells</p>
+          </article>
+
+          <article class="card program-card" data-level="advanced">
+            <div class="program-tag">Advanced</div>
+            <h3>Power & Performance</h3>
+            <p>High intensity training for experienced users.</p>
+            <p class="program-meta">45–60 min · High impact</p>
+          </article>
+
+          <article class="card program-card" data-level="home">
+            <div class="program-tag">Home</div>
+            <h3>Desk Break Routine</h3>
+            <p>Short movement sessions during study or work breaks.</p>
+            <p class="program-meta">10 min · Anywhere</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section section-cta">
+      <div class="container cta-inner">
+        <div>
+          <h2>Want a personalized training plan?</h2>
+          <p>Create a free account and start tracking your workouts.</p>
+        </div>
+        <a href="dashboard.html" class="btn">Create Free Account</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitLife Hub.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife Hub – Contact Us</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">FitLife<span>Hub</span></div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+      <a href="dashboard.html" class="btn btn-small">Login</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="programs.html" class="nav-link">Programs</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+    <a href="dashboard.html" class="nav-link">Login</a>
+  </nav>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container contact-grid">
+      <div>
+        <h1 class="section-title">Contact Us</h1>
+        <p class="section-subtitle">
+          Have questions, feedback, or partnership opportunities?  
+          Our team is always ready to help.
+        </p>
+
+        <div class="contact-info">
+          <p><strong>Email:</strong> support@fitlifehub.com</p>
+          <p><strong>Phone:</strong> +95 9 123 456 789</p>
+          <p><strong>Address:</strong> Yangon, Myanmar</p>
+        </div>
+
+        <div class="map-box">
+          <!-- Replace with real map image / embedded map -->
+          <img src="images/map-placeholder.png" alt="Map" />
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="card contact-form" id="contactForm">
+        <label>
+          Your Name
+          <input type="text" name="name" required />
+        </label>
+
+        <label>
+          Email Address
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Subject
+          <input type="text" name="subject" required />
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+
+        <button type="submit" class="btn">Send Message</button>
+
+        <p class="form-message" id="contactMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitLife Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife Hub – Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dashboard-body">
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">FitLife<span>Hub</span></div>
+      <nav class="nav">
+        <a href="dashboard.html" class="nav-link active">Dashboard</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="#" class="nav-link">Profile</a>
+      </nav>
+      <a href="index.html" class="btn btn-small btn-outline">Logout</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="dashboard.html" class="nav-link active">Dashboard</a>
+    <a href="programs.html" class="nav-link">Programs</a>
+    <a href="#" class="nav-link">Profile</a>
+    <a href="index.html" class="nav-link">Logout</a>
+  </nav>
+
+  <main class="section">
+    <div class="container dashboard-grid">
+      <!-- Left side -->
+      <section class="card">
+        <h2>Welcome back, <span id="username">User</span> 👋</h2>
+        <p>Your weekly wellness summary at a glance.</p>
+
+        <div class="grid stats-grid">
+          <div class="stat-card">
+            <h3>BMI</h3>
+            <p id="bmiValue">—</p>
+          </div>
+          <div class="stat-card">
+            <h3>Calories Today</h3>
+            <p id="caloriesToday">0 kcal</p>
+          </div>
+          <div class="stat-card">
+            <h3>Workouts This Week</h3>
+            <p id="workoutsWeek">0</p>
+          </div>
+          <div class="stat-card">
+            <h3>Progress</h3>
+            <div class="progress-bar">
+              <div class="progress-fill" id="progressFill"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- BMI Calculator -->
+        <div class="bmi-box">
+          <h3>Quick BMI Check</h3>
+          <div class="bmi-grid">
+            <label>
+              Height (cm)
+              <input type="number" id="bmiHeight" />
+            </label>
+            <label>
+              Weight (kg)
+              <input type="number" id="bmiWeight" />
+            </label>
+            <button class="btn btn-small" id="bmiCalcBtn">Calculate</button>
+          </div>
+          <p id="bmiMessage" class="bmi-message"></p>
+        </div>
+      </section>
+
+      <!-- Right side -->
+      <section class="card">
+        <h2>Add Workout</h2>
+        <form id="workoutForm" class="workout-form">
+          <label>
+            Workout Name
+            <input type="text" id="workoutName" required />
+          </label>
+          <label>
+            Duration (minutes)
+            <input type="number" id="workoutDuration" required />
+          </label>
+          <label>
+            Calories Burned
+            <input type="number" id="workoutCalories" required />
+          </label>
+          <label>
+            Category
+            <select id="workoutCategory">
+              <option value="Cardio">Cardio</option>
+              <option value="Strength">Strength</option>
+              <option value="Mobility">Mobility</option>
+              <option value="Mind & Body">Mind & Body</option>
+            </select>
+          </label>
+          <button type="submit" class="btn">Add Workout</button>
+          <p class="form-message" id="workoutFormMessage"></p>
+        </form>
+
+        <h3 class="table-title">Recent Workouts</h3>
+        <div class="table-wrapper">
+          <table class="workout-table" id="workoutTable">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Workout</th>
+                <th>Duration</th>
+                <th>Calories</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Rows added with JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitLife Hub.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

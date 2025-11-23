@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitLife Hub – Start Your Wellness Journey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo">FitLife<span>Hub</span></div>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="#articles" class="nav-link">Articles</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+      <a href="dashboard.html" class="btn btn-small">Login / Sign Up</a>
+      <button class="menu-toggle" id="menuToggle">☰</button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-nav" id="mobileNav">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="programs.html" class="nav-link">Programs</a>
+    <a href="#articles" class="nav-link">Articles</a>
+    <a href="#contact" class="nav-link">Contact</a>
+    <a href="dashboard.html" class="nav-link">Login / Sign Up</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Start Your <span>Wellness Journey</span></h1>
+        <p>Your personal guide for fitness, health and lifestyle.</p>
+        <div class="hero-actions">
+          <a href="dashboard.html" class="btn">Get Started</a>
+          <a href="programs.html" class="btn btn-outline">Browse Programs</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <!-- Replace with your own illustration/image -->
+        <div class="hero-blob">
+          <div class="hero-circle"></div>
+          <div class="hero-circle small"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Why Choose FitLife Hub?</h2>
+      <div class="grid benefits-grid">
+        <div class="card">
+          <div class="icon-circle">💪</div>
+          <h3>Custom Workout Plans</h3>
+          <p>Choose routines tailored to your goals and fitness level.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">📈</div>
+          <h3>Progress Tracking</h3>
+          <p>Track daily improvements and stay motivated.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">🥗</div>
+          <h3>Healthy Lifestyle Tips</h3>
+          <p>Daily wellness tips for sleep, food and habits.</p>
+        </div>
+        <div class="card">
+          <div class="icon-circle">✨</div>
+          <h3>Beginner Friendly</h3>
+          <p>Easy-to-follow plans for all ages and levels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Programs -->
+  <section class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Featured Programs</h2>
+      <div class="grid program-grid">
+        <article class="card program-card">
+          <div class="program-tag">Beginner</div>
+          <h3>Full Body Starter</h3>
+          <p>30-minute low-impact routine for absolute beginners.</p>
+          <button class="btn btn-small">View Program</button>
+        </article>
+        <article class="card program-card">
+          <div class="program-tag">Intermediate</div>
+          <h3>Home HIIT Blast</h3>
+          <p>High intensity workout, no equipment needed.</p>
+          <button class="btn btn-small">View Program</button>
+        </article>
+        <article class="card program-card">
+          <div class="program-tag">Wellness</div>
+          <h3>Mind & Body Flow</h3>
+          <p>Stretching and breathing session for stress relief.</p>
+          <button class="btn btn-small">View Program</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles / Tips -->
+  <section class="section" id="articles">
+    <div class="container">
+      <h2 class="section-title">Latest Wellness Articles</h2>
+      <div class="grid article-grid">
+        <article class="card">
+          <h3>5 Simple Habits To Boost Your Energy</h3>
+          <p>Small daily changes that make a big difference in how you feel.</p>
+          <a href="#" class="text-link">Read more →</a>
+        </article>
+        <article class="card">
+          <h3>Beginner Guide to Strength Training</h3>
+          <p>Learn how to safely start lifting without fear or confusion.</p>
+          <a href="#" class="text-link">Read more →</a>
+        </article>
+        <article class="card">
+          <h3>Healthy Meals in Under 20 Minutes</h3>
+          <p>Quick, realistic ideas for busy students and workers.</p>
+          <a href="#" class="text-link">Read more →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section section-alt" id="contact">
+    <div class="container contact-grid">
+      <div>
+        <h2 class="section-title">Contact Us</h2>
+        <p>Have questions or feedback? We’d love to hear from you.</p>
+        <p><strong>Email:</strong> support@fitlifehub.com</p>
+        <p><strong>Location:</strong> Yangon, Myanmar</p>
+      </div>
+      <form class="card contact-form" id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send Message</button>
+        <p class="form-message" id="contactFormMessage"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> FitLife Hub. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
